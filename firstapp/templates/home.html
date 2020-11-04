@@ -25,7 +25,7 @@
       <div  style="padding:50px; width: 30%;">
  <h1>  Search Your Doubt</h1> 
  <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="get">
-  <input class="form-control mr-sm-2" type="search" placeholder="Search" name="element" list="items">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" name="element" list="items" size="70">
   <datalist id="items" name="items">
     {% for list in items %}
     <option   >{{list.title}}</option>
